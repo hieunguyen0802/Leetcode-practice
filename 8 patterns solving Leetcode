@@ -1,0 +1,37 @@
+1. Sliding window
+- process a series of data: list / strings
+- find specific thing in a list -> this is a window
+- a window slides once at a time until entire list is scanned 
+- input: linear data structure, output: longest pattern
+- Use when problem asked to find a subset of pattern that satisfies given condition 
+
+
+2. Subset 
+- find possible combinations from common sets (repetition & no repetition)
+- explore all the possible arrangements of elements from the given
+
+3. Binary Search
+- core idea remains the same but change logic a bit to solve problem
+
+4. Top K element 
+- problem like: find k largest numbers in an array, find top ranking element from the data set
+- input: linear array
+
+5. Binary Tree DFS
+- recursion
+- use heap 
+- example problem: maximum depth of binary tree
+
+6. Topological sort
+- arrange element in a specific other when have dependencies on each other
+- use for directed acyclic graph (1-way connection between them; no cycle/ loop)
+- example problem: course schedule
+
+7. Binary Tree BFS
+- recursion
+- use queue
+- example problem: level order traversal
+
+8. Two pointer:
+- iterate thru sorted array
+- example problem: two sum II, 3Sum 
