@@ -1,5 +1,8 @@
-# solution: use 2 pointers, set at 0,1. keep left if r < l, otherwise move left to right position. Increment right r+1 every loop. Calculate profit at each run and compare with maxProfit.
+# solution1: use 2 pointers, set at 0,1. keep left if r < l, otherwise move left to right position. Increment right r+1 every loop. Calculate profit at each run and compare with maxProfit.
 # time and space: 0(n)
+
+# solution 2: set 1 min_price to infinity. Loop thru the list then update min_price. Do the subtraction to find profit at current price with min_price. Have one var to keep track largest profit. Update the largest profit while iterate
+
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
@@ -14,4 +17,17 @@ class Solution:
             r+=1           
         return maxProfit
 
+
+
+def maxProfit(self, prices: List[int]) -> int:
+        ans = 0
+        min_price = float('inf')
         
+        for i in prices:
+            if i < min_price:
+                min_price = i
+            profit = i - min_price
+            if profit > ans:
+                ans = profit
+        
+        return ans  
